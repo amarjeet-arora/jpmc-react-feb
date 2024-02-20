@@ -65,3 +65,65 @@ and call the methods by clicking on the buttons. and show the alert msg
 
 Lifecycle
 
+
+
+
+
+
+---------------
+
+
+import React, { Component } from "react";
+
+export default class Lsp extends Component {
+  render() {
+    return (
+      <div>
+        Welcome to Product Order Screen
+        <hr/>
+        <Order />
+        <hr/>
+        <Address />
+        <hr/>
+        <Summary />
+      </div>
+    );
+  }
+}
+
+class Order extends Component {
+  render() {
+    return <div>
+<p>Product Name 
+    <select>
+        <option>Product-1</option>
+        <option>Product-2</option>
+        <option>Product-3</option>
+    </select>
+</p>
+<p>Enter Quantity:<input type="text" /></p>
+    </div>;
+  }
+}
+
+class Address extends Component {
+  render() {
+    return <div>
+        <p>Adreess Details</p>
+        Address:
+        <input />
+    </div>;
+  }
+}
+
+class Summary extends Component {
+  render() {
+    return <div>
+       <p> Order Summary</p>
+       <p>Product Name: </p>
+       <p>Update Quantity:<input type="text" /></p>
+       <p>Address:</p>
+
+    </div>;
+  }
+}
